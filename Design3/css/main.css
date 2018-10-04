@@ -88,9 +88,11 @@ body {
 
 
 /*------------------------
-drop down menu styling start
-
-/*Drop down menu styling end*/
+padding bottom h1 styling start */
+.paddingB{
+    padding-bottom: 15px;
+}
+/*padding bottom h1 end*/
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */

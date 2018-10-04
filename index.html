@@ -20,15 +20,19 @@
 
     <!-- CSS
     ================================================== -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-
-
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+
 
     <!-- favicons
     ================================================== -->
@@ -52,11 +56,11 @@
             <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
             <div class="header-nav__content">
-                <h3>Navigation</h3>
+                <h3 id="WhiteText">Navigation</h3>
 
                 <ul class="header-nav__list">
 
-                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li class="current"><a class="smoothscroll" href="#howitworks" title="home">Home</a></li>
                     <li class="current"><a class="smoothscroll" href="#howitworks" title="home">How it works</a></li>
                     <li class="current"><a class="smoothscroll" href="#" title="home">Vision Mission Values</a></li>
                     <li class="current"><a class="smoothscroll" href="#" title="home">Team</a></li>
@@ -69,13 +73,16 @@
 
                 </ul>
 
-               
+
                 <ul class="header-nav__social">
                     <li>
                         <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
 
@@ -84,7 +91,7 @@
         </nav> <!-- end header-nav -->
 
         <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-text" id="MenuC">Menu</span>
             <span class="header-menu-icon"></span>
         </a>
 
@@ -105,14 +112,17 @@
 
 
                 <h1>We Engineer Sustainable Investments </h1>
-                <h3>
-                    Crowd Funding Energy and Peer-to-Peer (P2P) Energy Trading Network <br>
-                    A market place for Energy Providers, Investors, End-User Finance, and Project Developer Finance <br>
-                    Where Distributed Ledger Technology transects Distributed Power Technology <br>
-                    Invest in Renewable Energy and Sustainability Projects and contribute to Global Energy, Water and
-                    Food Security
+                <h3 class="paddingB">
+                    Crowd Funding Energy and Peer-to-Peer (P2P) Energy Trading Network </h3>
+                <h3 class="paddingB">
+                    A market place for Energy Providers, Investors, End-User Finance, and Project Developer Finance
+                </h3 class="paddingB">
+                <h3> Where Distributed Ledger Technology transects Distributed Power Technology
+                </h3 class="paddingB">
+                <h3 class="paddingB">Invest in Renewable Energy and Sustainability Projects and contribute to Global
+                    Energy,</h3>
+                <h3 class="paddingB"> Water and Food Security </h3>
 
-                </h3>
 
                 <div class="home-content__buttons">
                     <a href="#investors" class="smoothscroll btn btn--stroke">
@@ -121,12 +131,16 @@
                     <a href="#devs" class="smoothscroll btn btn--stroke">
                         For Developers
                     </a>
+                    <a href="#endUser" class="smoothscroll btn btn--stroke">
+                        End-User Finance
+                    </a>
+
                 </div>
 
             </div>
 
             <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
+                <a href="#contact" class="scroll-link smoothscroll">
                     <span>Scroll Down</span>
                 </a>
             </div>
@@ -140,6 +154,9 @@
             </li>
             <li>
                 <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
             </li>
         </ul>
         <!-- end home-social -->
@@ -158,7 +175,7 @@
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row about-desc" data-aos="fade-up">
+        <div class="row about-desc" data-aos="fade-up" class="container">
             <div class="row services-list block-1-2 block-tab-full">
                 <div class="col-block service-item" data-aos="fade-up">
                     <div class="investorsIcon">
@@ -186,50 +203,61 @@
                         <i class="fa fa-users"></i>
                     </div>
                     <div class="service-text">
-                        <h3 class="h2">Benifits</h3>
-                        <p>Community Member Registration costs $100 USD per Month for Annual Subscription
-                        </p>
-                        <p> What you get!!</p>
+                        <h3 class="h2">Community Member</h3>
+                        <p data-toggle="collapse" data-target="#secondLevel">Community Member Registration costs $100
+                            USD per Month for Annual Subscription
+                            <br>What do you get <span data-toggle="collapse" data-target="#secondLevel" class="fa fa-angle-down"></span>
 
-                        <ul style="list-style-type:disc">
-                            <li>$1 200 USD Worth of XSS Tokens
-                                Account Dashboard Access to;</li>
-                            <li> XSS Token Sale & Energy Exchange</li>
-                            <li> Listed Projects to Invest in</li>
-                            <li> Project Submission for Funding</li>
-                            <li> Discounts on Products & Services</li>
-                            <li> Market Insights</li>
-                            <li> Access to Partnership Programs</li>
-                            <li> Affiliate Referral Commissions</li>
-                            <li> Membership Free After 1 year </li>
-                        </ul>
+                            <div class="collapse" class="columns" id="secondLevel">
+                                <ul class="price">
+                                    <li>Account Dashboard Access to: <span data-toggle="collapse" data-target="#thirdLevel"
+                                            class="fa fa-angle-down"></span></li>
+                                    <div class="collapse" id="thirdLevel">
+                                        <li>$1 200 USD Worth of XSS Tokens
+                                        </li>
+                                        <li> XSS Token Sale & Energy Exchange</li>
+                                        <li> Listed Projects to Invest in</li>
+                                        <li> Project Submission for Funding</li>
+                                        <li> Discounts on Products & Services</li>
+                                        <li> Market Insights</li>
+                                        <li> Access to Partnership Programs</li>
+                                        <li> Affiliate Referral Commissions</li>
+                                        <li> Membership Free After 1 year </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </p>
                     </div>
                 </div>
                 <div class="col-block service-item" data-aos="fade-up">
                     <div class="investorsIcon">
-                        <i class="icon-download"></i>
+                        <i class="fa fa-user"></i>
                     </div>
                     <div class="service-text">
-                        <h3 class="h2">Client</h3>
-                        <p> What you get!!</p>
-                        <ul style="list-style-type:disc">
-                            <li>
-                                Access XSS Token Sale
-                                Access to Product & Services
-                            </li>
-                            <li> SolarSwop Use Agreement </li>
-                            <li> Solar Loan Financing</li>
-                            <li> Project Finance Application
-                                Purchase a Product or Service and get Community membership free for life!!</li>
-                        </ul>
+                        <h3 class="h2">Solar Client</h3>
+                        <p data-toggle="collapse" data-target="#secondLevel1">Join as Solar Client for Free
+                            With Limited Access
+                            <br>What do you get <span data-toggle="collapse" data-target="#secondLevel1" class="fa fa-angle-down"></span>
+                            <div class="collapse" class="columns" id="secondLevel1">
+                                <ul class="price">
+                                    <li>
+                                        Access XSS Token Sale
+                                    </li>
+                                    <li> Access to Product & Services </li>
+                                    <li class="paddingRight"> SolarSwop Use Agreement </li>
+                                    <li class="paddingRight"> Solar Loan Financing</li>
+                                    <li> Project Finance Application
+                                    </li>
+                                    <li>Purchase a Product or Service
+                                        and get Community membership free for life!!</li>
+                                </ul>
+                            </div>
                         </p>
                     </div>
                 </div>
-
-
             </div>
             <div class="home-content__buttons" id="centerBut">
-                <a href="" class="smoothscroll btn btn--stroke">
+                <a href="" class="smoothscroll btn btn--stroke" id="JoinNow">
                     Join now
                 </a>
             </div>
@@ -247,7 +275,7 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">How it works</h3>
+                <h3 class="subhead" id="BlackText">How it works</h3>
                 <h1 class="display-2">Investors</h1>
             </div>
         </div> <!-- end section-header -->
@@ -323,7 +351,7 @@
 
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
                 <div class="col-full">
-                    <h3 class="subhead">How it works </h3>
+                    <h3 class="subhead" id="WhiteText">How it works </h3>
                     <h1 class="display-2 display-2--light">For Developers</h1>
                 </div>
             </div> <!-- end section-header -->
@@ -348,8 +376,8 @@
                     </div>
                     <div class="service-text">
                         <h3 class="h2">Acceptance</h3>
-                        <p>Submit an application for Project to be listed on Platform. Our EPC Team will evaluate the
-                            Project. </p>
+                        <p>On acceptance project generation capacity in kWh will be tokenised. Project then listed on
+                            Platform. </p>
                     </div>
                 </div>
                 <div class="col-block service-item" data-aos="fade-up">
@@ -374,6 +402,178 @@
             </div> <!-- end works-content -->
         </div> <!-- end intro-wrap -->
     </section> <!-- end s-works -->
+    <!-- How it works investors
+    ================================================== -->
+    <section id='endUser' class="s-user">
+        <div class="intro-wrap">
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h1 class="display-2">End-User Agreement</h1>
+                    <p class="subhead" id="BlackText">Usage Agreement (UA)</p>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row services-list block-1-2 block-tab-full" id="allignCenter">
+
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-recycle"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2" id="BlackText">Exchange</h3>
+                        <p>Swop all or part of your current Electricity Bill for the usage of Solar Equipment and own
+                            the
+                            equipment within 10 years.
+                            Making savings in the process and switch a Living Expense into an Investment
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="icon-expand"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2" id="BlackText">Return</h3>
+                        <p>The Return on your Investment (ROI) could be as much R 350 000 within 15 Years</p>
+                    </div>
+                </div>
+
+            </div> <!-- end services-list -->
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead"></h3>
+                    <h1 class="display-2"></h1>
+                    <p class="subhead" id="BlackText">How it works</p>
+                </div>
+            </div> <!-- end section-header -->
+            <div id="expanderList" class="row section-header">
+                <ul>
+                    <li>
+                        <p class="expandP">Register online or on Mobile App.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Conduct an energy audit to assess suitability abd savings potential.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">SolarSwop engineer and propose an Usage Agreement (UA) using the savings of
+                            the
+                            equipment as your monthly Usage payment .</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Clients Acepts UA and SolarSwop install Solar Equipment</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="expanderList" class="row section-header">
+                <ul>
+                    <li class="reduceWidth">
+                    </li>
+                    <li>
+                        <p class="expandP">SolarSwop Commission the Equipment and instruct clients bank of direct debit
+                            on
+                            UA Payment.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Client starts his journey to a Sustainable lifestyle.</p>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead"></h3>
+                    <h1 class="display-2"></h1>
+                    <p class="subhead" id="BlackText">The Benifits</p>
+                </div>
+            </div> <!-- end section-header -->
+
+
+            <div id="expanderList" class="row section-header">
+                <ul>
+                    <li>
+                        <p class="expandP">Free Energy while the sun shines.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p class="expandP">Save money and create and Create an Investment.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">No upfront payment neccesary, no loan application, no strain on your
+                            cash flow.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Protect yourself againts Electricity price hikes.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="expanderList" class="row section-header">
+                <ul>
+                    <li>
+                        <p class="expandP">Peace of mind with insurance and maintainance included in the UA.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p class="expandP">Hot water and Electricity during load shedding and Power Outages.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Emotional reward by contributing to the preservation of the Planet.</p>
+                    </li>
+                    <li>
+                        <p class="expandP">Protect yourself againts Electricity price hikes.</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead"></h3>
+                    <h1 class="display-2"></h1>
+                    <p class="subhead" id="BlackText">UA Equipment Package</p>
+                </div>
+            </div> <!-- end section-header -->
+            <div class="row services-list block-1-2 block-tab-full">
+
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fa fa-tint"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2" id="BlackText">Portion</h3>
+                        <p>200 liter Solar Geyser.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fa fa-power-off"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h2" id="BlackText">Portion</h3>
+                        <ul>
+                            <li>6 kWp PV Solar Panels, 8 kWp Invertor Set
+                            </li>
+                            <li>3 kWhours Battery Backup Pack
+                            </li>
+                            <li>Munic SSEG Application and Tariff Fee paid by SolarSwop.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="home-content__buttons" id="centerButInvestor">
+                <a href="" class="smoothscroll btn btn--stroke" id="Swop">
+                    Swop  & Save
+                </a>
+            </div>
+        </div>
+    </section> <!-- end s-services -->
+
 
 
     <!-- clients
@@ -382,7 +582,7 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Our Partners</h3>
+                <h3 class="subhead" id="BlackText">Our Partners</h3>
                 <h1 class="display-2"></h1>
             </div>
         </div> <!-- end section-header -->
@@ -400,114 +600,7 @@
     </section> <!-- end s-clients -->
 
 
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
-            </div>
-        </div>
-
-        <div class="row contact-content" data-aos="fade-up">
-
-            <div class="contact-primary">
-
-                <h3 class="h6">Send Us A Message</h3>
-
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
-
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
-                                minlength="2" required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value=""
-                                required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
-                                class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10"
-                                cols="50" required="" aria-required="true" class="full-width"></textarea>
-                        </div>
-                        <div class="form-field">
-                            <button class="full-width btn--primary">Submit</button>
-                            <div class="submit-loader">
-                                <div class="text-loader">Sending...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Something went wrong. Please try again.
-                </div>
-
-                <!-- contact-success -->
-                <div class="message-success">
-                    Your message was sent, thank you!<br>
-                </div>
-
-            </div> <!-- end contact-primary -->
-
-            <div class="contact-secondary">
-                <div class="contact-info">
-
-                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
-
-                    <div class="cinfo">
-                        <h5>Where to Find Us</h5>
-                        <p>
-
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Email Us At</h5>
-                        <p>
-
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Call Us At</h5>
-                        <p>
-
-                        </p>
-                    </div>
-
-                    <ul class="contact-social">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-
-                    </ul> <!-- end contact-social -->
-
-                </div> <!-- end contact-info -->
-            </div> <!-- end contact-secondary -->
-
-        </div> <!-- end contact-content -->
-
-    </section> <!-- end s-contact -->
+   
 
 
     <!-- footer
@@ -519,12 +612,21 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright SolarSwop  &copy;<script>
+                    <span>© Copyright SolarSwop &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script></span>
+                        </script></span> <br>
+                    <span>SolarSwop was founded on the believe that by focusing funds on Renewable Energy and
+                        Technology in Key Sectors such as Energy Supply to Homes and Businesses, Agriculture, Water
+                        Preservation, Harvesting and Reticulation. Agro-Processing & Food Distribution, and
+                        Communication Technology, this can unlock Job Creation in vast quantities and help grow the
+                        Economies of Africa. Thereby contributing towards Energy Security, Water Security and Food
+                        Security, and whilst achieving Social Equity and Environmental Impact Mitigation.</span>
                 </div>
 
                 <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="go-top1">
                     <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -594,6 +696,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
